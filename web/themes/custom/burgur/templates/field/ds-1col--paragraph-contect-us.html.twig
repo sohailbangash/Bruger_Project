@@ -1,0 +1,154 @@
+
+{#################### This style is only for backgound images #######################}
+<style>
+	.web-form {
+        background-image:url({{ content.field_form_bg_image.0['#markup'] }});
+		 background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center center;
+        max-width: 100%;
+        height: auto;
+        display: flex;
+    }
+
+
+</style>
+
+ <div class="web-form mt-2 p-5">
+   <div class="container">
+       <div class="row d-flex justify-content-center">
+        <div class="col-md-9 m-5">
+            <div class="tex-center mb-7">
+                <div class="text-center  text-uppercase mb-5">
+                    <!--utilities -->
+                    <h4 class="web-form__small-heading">{{ content.field_form_small_title }}</h4>
+                    <h1 class="web-form__heading">{{ content.field_form_large_title }}</h1>
+                </div>
+                <form action="#" class="form">
+                        {{ content.field_contact_us_form }}
+                </form>
+            </div>
+        </div>
+    </div>
+</div>
+</div>
+
+
+
+{############################# Image query testing #####################################}
+
+
+{# @media  (min-width: 36em) and (max-width: 47.99em) {
+
+  .web-form {
+        background-image:url({{ content.field_form_bg_image.0['#markup'] }});
+		 background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center center;
+        max-width: 100%;
+        height: auto;
+        display: flex;
+    }
+   
+}
+
+
+@media  only screen and (max-width: 360px) {
+
+
+   .web-form {
+        background-image:url({{ content.field_form_bg_image.0['#markup'] }});
+		 background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center center;
+        max-width: 100%;
+        height: auto;
+        display: flex;
+    }
+}
+
+
+
+@media  (min-width: 360px)  and (max-width: 375px) {
+
+   .web-form {
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center center;
+        max-width: 100%;
+        height: auto;
+        display: flex;
+    }
+}
+
+
+
+@media  (min-width: 25.87em) and (max-width: 35.99em) {
+
+
+   .web-form {
+        background-image:url({{ content.field_form_bg_image.0['#markup'] }});
+		 background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center center;
+        max-width: 100%;
+        height: auto;
+        display: flex;
+    }
+}
+
+
+
+@media  (min-width: 47em) and (max-width: 46.93em)  {
+
+  .web-form {
+        background-image:url({{ content.field_form_bg_image.0['#markup'] }});
+	 background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center center;
+        max-width: 100%;
+        height: auto;
+        display: flex;
+    }
+   
+}
+
+@media (min-width: 47em) and (max-width: 61.99em) {
+
+  .web-form {
+        background-image:url({{ content.field_form_bg_image.0['#markup'] }});
+	 background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center center;
+        max-width: 100%;
+        height: auto;
+        display: flex;
+    }
+}
+
+@media (min-width: 61em) and (max-width: 68.75em) {
+
+   .web-form {
+        background-image:url({{ content.field_form_bg_image.0['#markup'] }});
+		 background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center center;
+        max-width: 100%;
+        height: auto;
+        display: flex;
+    }
+}
+
+@media  (min-width: 68.75em) and (max-width: 80.75em)  {
+
+
+   .web-form {
+        background-image:url({{ content.field_form_bg_image.0['#markup'] }});
+ background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center center;
+        max-width: 100%;
+        height: auto;
+        display: flex;
+}
+} #}

@@ -1,0 +1,18 @@
+mylibraries:
+  css:
+    theme:
+      css/bootstrap.min.css: {} 
+      css/main.min.css: {}
+      
+  js:
+    js/popper.min.js: {}  
+    js/bootstrap.min.js: {} 
+  dependencies:
+    - core/jquery
+
+animation:
+  css:
+    theme:
+      libraries/animateCSS/animate.min.css: {} 
+
+

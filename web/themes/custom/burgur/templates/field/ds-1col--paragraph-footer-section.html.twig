@@ -1,0 +1,124 @@
+{################## This style is only for backgound images ################}
+<style>
+    .footer {
+        background-image: url({{ content.field_footer_bg_image.0['#markup'] }});
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center center;
+        max-width: 100%;
+        height: auto;
+        display: flex;
+     }
+    
+   
+</style>
+
+
+<footer class="footer">
+    <div class="container-fluid">
+        <div class="row justify-content-end">
+            <div class="col-md-6 col-sm-12">
+                <div class="footer__footer-logo margin-left">{{ content.field_footer_logo }}
+                    <h1 class="text-uppercase footer__large-title">{{ content.field_footer_large_title }}</h1>
+                </div>
+
+                <div class="col-md-10">
+                    <div class="d-flex">{{ content.field_footer_description }}</div>
+                </div>
+            </div>
+            <div class="col-md-6 col-sm-12 align-self-center d-flex justify-content-center text-justify text-uppercase">
+                <div class="footer__location ">
+                    <div class="footer__location-title">
+                           <img src="{{ content.field_small_icon.0['#markup'] }}" style="width:2rem;height:2rem">
+                        <div class="ml-2">{{ content.field_footer_small_title }}</div>
+                    </div>
+                    <div class="footer__location-email pt-3">
+                          <img src="{{ content.field_small_icon.1['#markup'] }}">
+                        <div class="email ml-3">{{ content.field_footer_email }}</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+        <div class="row d-flex justify-content-between mt-5">
+            <div class="col-md-6 col-sm-6">
+                <div class="footer__copyright margin-left text-uppercase  d-flex">
+                    <span>&copy;</span> {{ content.field_footer_copyright }}
+                </div>
+            </div>
+     {################## Footer icon using for loop show icon image with links ################}
+          <div class="col-md-4 col-sm-6 footer__icon">
+                 {% for footer_link in  content.field_footer_link['#items'] %}
+                     <a href="{{ footer_link.url() }}">
+                         <img src="{{ attribute(content['field_icon_image'], loop.index -1)['#markup'] }}" class="float-md-right pl-2 footer__icon-hover" style="width: 2.5rem;">
+                    </a>
+                 {% endfor %}
+
+           </div>
+      </div>
+    </div>
+</footer>
+
+
+
+{# {{ kint(content["field_icon_image"].0["#markup"]|keys) }} #}
+
+
+
+
+
+{############################# Image query testing #####################################}
+
+ {# @media (max-width: 35.99em) {
+        .footer {
+            background-image: url({{ content.field_footer_bg_image.0['#markup'] }});
+           background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center center;
+        max-width: 100%;
+        height: auto;
+        display: flex;
+        }
+    }
+    
+        
+        @media (min-width: 36em) and (max-width: 47.99em) {
+            .footer {
+                background-image: url({{ content.field_footer_bg_image.0['#markup'] }});
+                background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center center;
+        max-width: 100%;
+        height: auto;
+        display: flex;
+            }
+        }
+     
+        
+            @media (min-width: 47em) and (max-width: 61.99em) {
+                .footer {
+                    background-image: url({{ content.field_footer_bg_image.0['#markup'] }});
+                    background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center center;
+        max-width: 100%;
+        height: auto;
+        display: flex;
+                }
+            }
+            @media (min-width: 61em) and (max-width: 68.75em) {
+                .footer {
+                    background-image: url({{ content.field_footer_bg_image.0['#markup'] }});
+                    background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center center;
+        max-width: 100%;
+        height: auto;
+        display: flex;
+                }
+            } #}
+
+
+
+

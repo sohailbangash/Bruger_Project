@@ -1,0 +1,42 @@
+name: Brugur Shop
+type: theme
+description: 'Our first  Project'
+core: 8.x
+package: BURGUR
+base theme: classy
+ 
+libraries:
+  - burgur/mylibraries
+  - burgur/animation
+
+regions:
+  navbar_brand: Navbar Brand
+  navbar_address: Navbar Address
+  navbar_shopping_cart: Shoping Cart
+  navbar: Navigation
+
+  help: Help
+  message: message
+  tabs: Tabs
+
+  content: Header_Region Content
+  header_region_first: Header Region First
+
+  region_second_first: Region Second_First
+  region_second_second: Region Second Second
+  region_second_third: Region Second Third
+
+  region_third_buttton: Region Third Button
+  
+
+ 
+  footer_first: Footer First
+  footer_second: Footer Second
+  footer_third: Footer Third
+  footer: Footer
+
+
+// hidden: true
+// required: true
+
+  

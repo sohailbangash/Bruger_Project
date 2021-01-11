@@ -1,0 +1,92 @@
+{################ This style is only for backgound images ###############}
+<style>
+    .header {
+        background-image: url({{  content.field_header_section_image.0['#markup'] }});
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: 100% 100%;
+        max-width: 100%;
+        height: auto;
+        display: flex;
+    }
+    
+ 
+</style>
+
+
+
+<header class="header">
+    <div class="row justify-content-start">
+        <div class="col-md-10 responsive-p-7">
+            <div class="col-md-12 col-sm-12 responsive-mt-2 responsive-pb">
+                <div class="header__descritpion animate__animated  animate__fadeInDown animate__delay-2s	2s">{{ content.field_header_description}}</div>
+                <h1 class="header__title animate__animated  animate__fadeInUp animate__slower	2s">{{ content.field_header_title }}</h1>
+            </div>
+        </div>
+    </div>
+</header>
+
+
+
+
+{############################# Image query testing #####################################}
+    
+    {# @media (max-width: 35.99em) {
+        .header {
+            background-image: url({{  content.field_header_section_image.0['#markup'] }});
+            background-repeat: no-repeat;
+            background-size: cover;
+            background-position: 100% 100%;
+            max-width: 100%;
+            height: auto;
+            display: flex
+        }
+        ;
+    }
+    
+    @media (min-width: 36em) and (max-width: 47.99em) {
+        .header {
+            background-image: url({{  content.field_header_section_image.0['#markup'] }});
+            background-repeat: no-repeat;
+            background-size: cover;
+            background-position: 100% 100%;
+            max-width: 100%;
+            height: auto;
+            display: flex;
+        }
+    }
+    
+    @media (min-width: 47em) and (max-width: 61.99em) {
+        .header {
+            background-image: url({{  content.field_header_section_image.0['#markup'] }});
+            background-repeat: no-repeat;
+            background-size: cover;
+            background-position: 100% 100%;
+            max-width: 100%;
+            height: auto;
+            display: flex;
+        }
+    }
+    
+    @media (min-width: 61em) and (max-width: 68.75em) {
+        .header {
+            background-image: url({{  content.field_header_section_image.0['#markup'] }});
+            background-repeat: no-repeat;
+            background-size: cover;
+            background-position: 100% 100%;
+            max-width: 100%;
+            height: auto;
+            display: flex;
+        }
+    }
+    
+    @media (min-width: 68em) and (max-width: 80.25em) {
+        .header {
+            background-image: url({{  content.field_header_section_image.0['#markup'] }});
+            background-repeat: no-repeat;
+            background-position: 100% 100%;
+            background-size: cover;
+            max-width: 100%;
+            display: flex;
+        }
+    } #}

@@ -1,0 +1,17 @@
+name: Panels Everywhere
+type: module
+description: Use the Panels architecture to manage the full page display.
+core_version_requirement: ^8.7.7 || ^9
+package: Panels
+dependencies:
+  # Core.
+  - drupal:layout_discovery
+  # Contrib.
+  - ctools:ctools_block
+  - panels:panels
+  - page_manager:page_manager
+
+# Information added by Drupal.org packaging script on 2020-10-08
+version: '8.x-4.0-beta2'
+project: 'panels_everywhere'
+datestamp: 1602162580
